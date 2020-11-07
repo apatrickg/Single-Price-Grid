@@ -28,29 +28,42 @@ body, html{
 
 .header{
     grid-column-start: span 2;
-    padding: 30px;
+    padding: 20px;
 }
 
+.header > p{
+    line-height: 1.8;
+}
 .sub{
     background: hsl(179, 62%, 43%);
-    padding: 30px;
+    padding: 25px;
     color: hsla(215, 41%, 92%, 0.726);
     border-bottom-left-radius: 15px;
 }
 
+.sub-head{
+    color:white;
+}
+
 .bigger{
     font-size: 200%;
+    color: white;
 }
 
 .why{
     background: hsl(179, 58%, 53%);
-    padding: 30px;
+    padding: 25px;
     list-style: none;
     border-bottom-right-radius: 15px;
+    color: hsla(215, 41%, 92%, 0.726);;
 }
 
-.why > li{
-    color: hsla(215, 41%, 92%, 0.726);
+.why-head{
+    color: white;
+}
+
+.why > p{
+    line-height: 0.2;
 }
 
 .btn{
@@ -74,10 +87,6 @@ body, html{
 
 #blue{
     color: hsl(179, 62%, 43%);;
-}
-
-#white{
-    color: white;
 }
 
 @media only screen and (max-width: 500px) {
