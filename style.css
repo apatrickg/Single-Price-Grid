@@ -20,8 +20,10 @@ body, html{
     display: grid;
     background: white;
     border-radius: 15px;
+    box-sizing: border-box;
     height: auto;
     width: 50vw;
+    max-width: 60vw;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
 }
@@ -38,6 +40,7 @@ body, html{
     background: hsl(179, 62%, 43%);
     padding: 10px 25px 25px 25px;
     color: hsla(215, 41%, 92%, 0.726);
+    line-height: 1.2;
     border-bottom-left-radius: 15px;
 }
 
@@ -63,13 +66,14 @@ body, html{
 }
 
 .why > p{
-    line-height: 0.35;
+    line-height: 0.65;
 }
 
 .btn{
     background: hsl(71, 73%, 54%);
     text-align: center;
     width: 100%;
+    margin-top: 2.3em;
     border: none;
     padding: 15px;
     border-radius: 5px;
@@ -90,7 +94,7 @@ body, html{
     color: hsl(179, 62%, 43%);;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
   .wrapper{
      display: flex;
      flex-direction: column;
@@ -98,17 +102,24 @@ body, html{
      width: 60%;
      justify-content: center;
      font-size: 0.75em;
+     
 
     }
   }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
   .sub{
     border-bottom-left-radius: 0px;
+    padding: 5px 15px 15px 15px
     }
+
+ .btn{
+    margin-top: 1em;
+ }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
 .why{
-    border-bottom-left-radius: 15px; }
+    border-bottom-left-radius: 15px; 
+    padding: 5px 15px 15px 15px;}
  }
